@@ -60,7 +60,7 @@ $conn->query("UPDATE users SET name='$name' WHERE id=$id");
 
 header("Location: index.php");
 ?>
-whilma
+wilma
 <?php
 include 'db.php';
 
