@@ -60,13 +60,4 @@ $conn->query("UPDATE users SET name='$name' WHERE id=$id");
 
 header("Location: index.php");
 ?>
-wilma
-<?php
-include 'db.php';
 
-$id = $_GET['id'];
-
-$conn->query("DELETE FROM users WHERE id=$id");
-
-header("Location: index.php");
-?>
