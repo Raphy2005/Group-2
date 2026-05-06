@@ -16,7 +16,7 @@ while ($row = $result->fetch_assoc()) {
 }
 ?>
 </ul>
-ghelo
+Whilma
 <?php include 'db.php'; ?>
 
 <h2>Add User</h2>
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: index.php");
 }
 ?>
-nian
+Bruce
 <?php
 include 'db.php';
 
@@ -49,7 +49,11 @@ $row = $result->fetch_assoc();
     <input type="text" name="name" value="<?php echo $row['name']; ?>" required>
     <button type="submit">Update</button>
 </form>
+<<<<<<< HEAD:Sample/index.php
 bruce 
+=======
+gelo
+>>>>>>> 61e1f9d0e127fdeb63853216c6066a4e260cd2f9:group 2/all.php
 <?php
 include 'db.php';
 
@@ -60,4 +64,13 @@ $conn->query("UPDATE users SET name='$name' WHERE id=$id");
 
 header("Location: index.php");
 ?>
+nian
+<?php
+include 'db.php';
 
+$id = $_GET['id'];
+
+$conn->query("DELETE FROM users WHERE id=$id");
+
+header("Location: index.php");
+?>
