@@ -49,7 +49,7 @@ $row = $result->fetch_assoc();
     <input type="text" name="name" value="<?php echo $row['name']; ?>" required>
     <button type="submit">Update</button>
 </form>
-bruce
+bruce 
 <?php
 include 'db.php';
 
